@@ -1,0 +1,7 @@
+@import url('mystyles/body.css');
+@import url('mystyles/header.css');
+@import url('mystyles/footer.css');
+@font-face{
+    font-family: fredericka the great;
+    src: url('../fonts/FrederickatheGreat-Regular.ttf') format('truetype');
+}
