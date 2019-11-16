@@ -1,4 +1,6 @@
 footer{
-    padding-left:30px;
-    color:#00f;
+    background:#000;
+    font-family: 'Bahnschrift', 'Calibri';
+    font-size:25px;
+    color:#fff;
 }

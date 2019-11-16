@@ -1,0 +1,26 @@
+h2{
+    text-align:center;
+}
+article{
+    background:#000;
+    opacity: .7;
+    font-family: fredericka the great, fantasy,'Open Sans', 'Helvetica Neue', Barriecito, Calibri;
+    font-size:18px;
+    color:lightblue;
+    padding-left:100px;
+    padding-right: 100px;
+    text-align: justify;
+}
+article a{
+    color:green;
+}
+article header{
+    border:none;
+    margin:0 auto;
+    width:100%;
+    text-align:justify;
+    color:lightblue;
+}
+article h2{
+    color:#fff;
+}

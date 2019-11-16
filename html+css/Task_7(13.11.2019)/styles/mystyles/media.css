@@ -1,0 +1,32 @@
+@media all and (max-width:1024px){
+    body{
+        grid-gap: 30px;
+    }
+}
+@media all and (max-width:768px){
+    article{
+        padding-left:10px;
+        padding-right: 10px;
+
+    }
+}
+@media all and (max-width:426px){
+    body{
+        grid-template-areas:
+        "header "
+        "article"
+        "footer";
+        grid-template-rows:35% 1fr 5%;
+        grid-template-columns: 1fr;
+        background:#1E90FF;
+        grid-gap:0;
+    }
+    nav ul{
+        padding-right:20px;
+    }
+}
+@media all and (max-width:375px){
+    body{
+        grid-template-rows:31% 1fr 5%;
+    }
+}
