@@ -34,13 +34,15 @@ let checkGuess = ()=>{
     resultFields.lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
       resultFields.lowOrHi.textContent = 'Low!' ;
-      firstBorder+=5;
-      if(firstBorder > randomNumber) firstBorder = randomNumber - 1;
+      firstBorder = (+userGuess);
+      //firstBorder+=5;
+      //if(firstBorder > randomNumber) firstBorder = randomNumber - 1;
     }
     if(userGuess > randomNumber) {
       resultFields.lowOrHi.textContent = 'High!';
-      secondBorder-=5;  
-      if(secondBorder < randomNumber) secondBorder = randomNumber + 1;
+      secondBorder = (+userGuess);
+      //secondBorder-=5;  
+      //if(secondBorder < randomNumber) secondBorder = randomNumber + 1;
     }
   }
 console.log(randomNumber);
