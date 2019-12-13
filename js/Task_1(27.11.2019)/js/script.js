@@ -1,3 +1,4 @@
+alert("Open console!");
 let count_elements = prompt("Input count elements: ");
 function Fibo() {
     const f = (function * () {
