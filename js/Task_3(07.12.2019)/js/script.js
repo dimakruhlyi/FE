@@ -41,7 +41,7 @@ let checkGuess = ()=>{
       if((+userGuess)<secondBorder) secondBorder = (+userGuess);
     }
   }
-console.log(randomNumber);
+//console.log(randomNumber);
   changedBorder.textContent = `Guessing border is from: ${firstBorder} to ${secondBorder}`;
   guessedFields.guessCount++;
   guessedFields.guessField.value = '';
