@@ -1,9 +1,162 @@
-@import url('mystyles/body.css');
+/* @import url('mystyles/body.css');
 @import url('mystyles/article.css');
 @import url('mystyles/header.css');
 @import url('mystyles/footer.css');
-@import url('mystyles/media.css');
+@import url('mystyles/media.css');*/
 @font-face{
     font-family: fredericka the great;
-    src: url('../fonts/FrederickatheGreat-Regular.ttf') format('truetype');
+    src: url('https://dimakruhlyi.github.io/FE/html%2Bcss/Task_7(13.11.2019)/fonts/FrederickatheGreat-Regular.ttf') format('truetype');
+} 
+h2{
+    text-align:center;
+}
+article{
+    background:#000;
+    opacity: .7;
+    font-family: fredericka the great, fantasy,'Open Sans', 'Helvetica Neue', Barriecito, Calibri;
+    font-size:18px;
+    color:lightblue;
+    padding-left:100px;
+    padding-right: 100px;
+    text-align: justify;
+}
+article a{
+    color:green;
+}
+article header{
+    border:none;
+    margin:0 auto;
+    width:100%;
+    text-align:justify;
+    color:lightblue;
+}
+article h2{
+    color:#fff;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header article"
+    "footer footer";
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    margin: 0;
+    background:url('https://dimakruhlyi.github.io/FE/html%2Bcss/Task_7(13.11.2019)/img/body.jpg') center no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    text-align: center;;
+}
+article{
+    grid-area: article;
+}
+footer{
+    background:#000;
+    font-family: 'Bahnschrift', 'Calibri';
+    font-size:25px;
+    color:#fff;
+}
+header{
+    width:100%;
+}
+header nav ul a{
+    font-family: 'Consolas';
+    font-size:20px;
+    text-decoration: none;;
+    color:#fff;
+}
+h1{
+    font-family: 'AR Julian';
+    font-size:80px;
+    text-align:center;
+    text-shadow: 7px 5px 6px rgba(206,206,206,0.88);
+    color:#fff;
+    
+}
+header nav h2{
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+    font-size:30px;
+    color:lightblue;
+    text-shadow: 8px 5px 8px rgba(0,0,0,0.97);
+}
+header nav h2:hover{
+    cursor: pointer;
+}
+nav{
+    font-size:14px;
+    text-shadow:none;
+    top:0;
+    width:100%;
+}
+nav ul{ 
+    display:none;
+    list-style:none;
+    max-height:400px;
+    overflow-y:scroll;
+}
+nav ul li:nth-child(even){
+    background:#273447;
+    
+}
+nav ul li:nth-child(odd){
+    background:#4682B4;
+}
+nav ul li a:first-child{
+    font-family: 'Consolas';
+    font-size:20px;
+    color:lightblue;
+}
+nav ul li a:first-child::after{
+    content: " via ";
+    color:blue;
+    font-family: 'Broadway';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul,section{
+    margin:0 0 20px;
+}
+nav:hover ul{
+    cursor: pointer;
+    display:block;
+}
+@media all and (max-width:1024px){
+    body{
+        grid-gap: 30px;
+    }
+}
+@media all and (max-width:768px){
+    article{
+        padding-left:10px;
+        padding-right: 10px;
+
+    }
+}
+@media all and (max-width:426px){
+    body{
+        grid-template-areas:
+        "header "
+        "article"
+        "footer";
+        grid-template-rows:35% 1fr 5%;
+        grid-template-columns: 1fr;
+        background:#1E90FF;
+        grid-gap:0;
+    }
+    nav ul{
+        padding-right:20px;
+    }
+}
+@media all and (max-width:375px){
+    body{
+        grid-template-rows:31% 1fr 5%;
+    }
 }
