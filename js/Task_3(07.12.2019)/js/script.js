@@ -15,10 +15,10 @@ let resultFields = {
 let changedBorder = document.querySelector('.changedBorder');
 let randomNumber = randNumber(1,100);
 let firstBorder = 1, secondBorder = 100;
-console.log(randomNumber);
+//console.log(randomNumber);
 
 let checkGuess = ()=>{
-  let userGuess = Number(guessedFields.guessField.value);
+  let userGuess = Math.round(Number(guessedFields.guessField.value));
   if (guessedFields.guessCount === 1) {
     resultFields.guesses.textContent = 'Previous guesses: ';
   }
@@ -34,15 +34,11 @@ let checkGuess = ()=>{
     resultFields.lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
       resultFields.lowOrHi.textContent = 'Low!' ;
-      firstBorder = (+userGuess);
-      //firstBorder+=5;
-      //if(firstBorder > randomNumber) firstBorder = randomNumber - 1;
+      if((+userGuess)> firstBorder)firstBorder = (+userGuess);
     }
     if(userGuess > randomNumber) {
       resultFields.lowOrHi.textContent = 'High!';
-      secondBorder = (+userGuess);
-      //secondBorder-=5;  
-      //if(secondBorder < randomNumber) secondBorder = randomNumber + 1;
+      if((+userGuess)<secondBorder) secondBorder = (+userGuess);
     }
   }
 console.log(randomNumber);
