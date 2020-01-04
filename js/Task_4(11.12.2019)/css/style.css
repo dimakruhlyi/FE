@@ -21,6 +21,12 @@ h1{
 .changedBorder{
     font-weight: bold;
 }
-.guessed, .more, .less, .success{
+.guessed2, .more2, .less2, .success2{
     display: none;;
+}
+.first-box, .gg{
+    display:none;
+}
+.gg{
+    margin:0 auto;
 }
