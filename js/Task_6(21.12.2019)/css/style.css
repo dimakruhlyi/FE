@@ -1,0 +1,93 @@
+.links{
+	display: inline-block;
+	font-size:25px;
+	font-family: 'Algerian', 'Calibri';
+	color:#00008B;
+}
+.links:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.users {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.user {
+	font-family: 'Calibri';
+	font-size:20px;
+	max-width: 250px;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid #00008B;
+}
+.main_block{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.post {
+	margin: 20px auto;
+	padding: 10px;
+	max-width: 650px;
+	font-family: 'Calibri';
+	text-align: justify;
+}
+
+.post h2 {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'Algerian', 'Calibri';
+}
+.post h2:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+main .button {
+	text-align: center;
+	width: 100%;
+	font-family: 'Algerian', 'Calibri';
+	font-size:25px;
+	cursor: pointer;
+	
+}
+main .button:hover{
+	color:#00008B;
+}
+
+.comments {
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.comments .comment {
+	padding: 12px;
+	border-bottom: 1px solid black;
+}
+
+.comments .comment:first-child {
+	border-top: 1px solid black;
+}
+
+.comments .comment .comment-email {
+	width: 100%;
+	text-align: right;
+	font-family: 'Calibri';
+	font-style: italic;
+}
+
+.comments .comment .comment-name {
+	padding: 10px 0;
+	font-family: 'Calibri';
+	font-weight: 600;
+	font-size: 22px;
+}
+.comments .comment .comment-body{
+	font-family: 'Calibri';
+	font-size:17px;
+}
