@@ -596,6 +596,142 @@ const header = {
     ],
   };
   
+const art = {
+    tag: 'article',
+    attr: [ ['role', 'main'], ],
+    children: [
+    {
+        tag: 'header',
+        children: [
+        {
+            tag: 'h2',
+            children: [
+            'The Beauty in ', { tag:'abbr', children: ['CSS '], }, 'Design', 
+            ],
+        },
+        {
+            tag: 'p',
+            children: [
+            'A demonstration of what can be accomplished with only 1 ', { tag:'abbr', attr: [ ['title', 'Kibibyte'], ], children: ['K'], }, 
+            '(', { tag:'dfn', attr: [ ['title', '1024 bytes'], ], children: ['Kibibyte'], }, ') of ', { tag:'abbr', children: ['CSS'], },
+            '. Select any design from the list to load it into this page. You can also navigate back and forth by using the left and right arrow keys.',
+            ],
+        },
+        ],
+    },
+    {
+        tag: 'section',
+        children: [
+        {
+            tag: 'h2',
+            children: [
+            'So What is This About?', 
+            ],
+        },
+        {
+            tag: 'p',
+            children: [
+            'Back in 2003 (thats ', { tag:'span', attr: [ ['id', 'zengarden-age'], ], children: ['a lot of '], }, 
+            'years ago!) ', { tag:'a', attr: [ ['href', 'http://mezzoblue.com'], ], children: ['Dave Shea '], }, 'launched the ', 
+            { tag:'a', attr:[['href', 'http://www.csszengarden.com']], children: [{tag: 'cite', children:[{tag: 'abbr', children:['CSS ']}, 'Zen Garden']}], },
+            '. It showcased what was possible with ', { tag:'abbr', children: ['CSS'], }, '-based designs, leading to an explosion in the use of CSS on the web. Then, ',
+            { tag:'a', attr: [ ['href', 'http://qfox.nl'], ], children: ['Peter van der Zee '], }, 'created ', { tag:'a', attr: [ ['href', 'http://js1k.com'], ], children: ['JS1k '], },
+            'in 2010, a competition to build cool applications with no more than 1 ', { tag:'abbr', children: ['K '], }, 'of JavaScript.',
+            ],
+        },
+        {
+            tag: 'p',
+            children: [
+            'A lot has happened since the Zen Garden days, and today you can do almost anything with only ', { tag:'abbr', children: ['CSS '], },
+            '. As ', { tag:'abbr', children: ['CSS '], }, 'use is growing, so is the average ', { tag:'abbr', children: ['CSS '], }, 
+            'file size. Popular sites have in average ', { tag:'a', attr: [ ['href', 'http://httparchive.org/interesting.php#bytesperpage'], ], children: ['75 ', {tag: 'abbr', children:['K ']}, 'of ', { tag:'abbr', children: ['CSS'], }, ], },
+            ', but some use up to a megabyte of style sheets!',
+            ],
+        },
+        {
+            tag: 'p',
+            children: [
+            'Do we need that much? ', { tag:'b', children: ['CSS1K '], }, 'invites you to show that web developers are more inventive than ever, and that limitations can sparkle creativity.',
+            ],
+        },
+        ],
+    },
+    {
+        tag: 'section',
+        children: [
+        {
+            tag: 'h2',
+            children: [
+            'Participation', 
+            ],
+        },
+        {
+            tag: 'ol',
+            children: [
+            {
+                tag: 'li',
+                children: [
+                'Submissions must consist of only ', { tag:'abbr', children: ['CSS'], },
+                ],
+            },
+            {
+                tag: 'li',
+                children: [
+                'Submissions may be up to 1 ', { tag:'abbr', attr: [ ['title', 'Kibibyte'], ], children: ['K '], }, '(1024 bytes) minified',
+                ],
+            },
+            {
+                tag: 'li',
+                children: [
+                'Vendor prefixes are ', { tag:'em', children: ['not '], }, 'counted to the total number of bytes – submit your code unprefixed and ',
+                { tag:'a', attr: [ ['href', 'https://leaverou.github.io/prefixfree/'], ], children: ['PrefixFree '], }, 'will add necesssary prefixes'
+                ],
+            },
+            {
+                tag: 'li',
+                children: [
+                'Any external resources and images, including ', { tag:'code', children: ['data '], },{ tag:'abbr', children: ['URI'], },'`s ',
+                { tag:'code', children: ['@font-face '], },'and ', { tag:'code', children: ['@import'], }, '`s, are forbidden', 
+                ],
+            },
+            {
+                tag: 'li',
+                children: [
+                'The page ', { tag:'a', attr: [ ['href', 'http://dowebsitesneedtolookexactlythesameineverybrowser.com'], ], children: ['does not '], },
+                'have to look the same in every browser, but graceful degradation is encouraged',
+                ],
+            },
+            {
+                tag: 'li',
+                children: [
+                'The submitted code is licensed under the ', { tag:'a', attr: [ ['href', 'http://www.opensource.org/licenses/mit-license.php'], ], children: ['MIT License'], },
+                ],
+            },
+            ],
+        },
+        {
+            tag: 'p',
+            children: [
+            'To participate, fork ', { tag:'a', attr: [ ['href', 'https://github.com/selfthinker/CSS1K/'], ], children: ['CSS1K '], },
+            'at GitHub and send your submission as a pull request. You are free to update your style at any time by sending a new pull request. Please specify the name of the style, your own name, and a URL you want us to link to (such as your homepage).',
+            ],
+        },
+        ],
+    },
+    ],
+};
+const foot = {
+    tag: 'footer',
+    children: [
+    {
+        tag: 'p',
+        children: [
+            'Licensed under ', { tag:'a', attr: [ ['href', 'http://www.opensource.org/licenses/mit-license.php'], ['rel', 'license'], ], children: ['MIT license'], }, '. ',
+            'Hosted and managed at ', { tag:'a', attr: [ ['href', 'https://github.com/selfthinker/CSS1K'],], children: ['GitHub'], }, '.',
+        ]
+    },
+    ],
+};
   function build ( data ) {
     if ( typeof data ==='string') {
       return document.createTextNode( data );
@@ -614,4 +750,6 @@ const header = {
   }
 
 document.body.append(build(header));
-//console.log( build( list ) );
+document.body.append(build(art));
+document.body.append(build(foot));
+//console.log(build(foot));
