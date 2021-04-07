@@ -1,0 +1,29 @@
+@import url('../font/Roboto-Light.ttf');
+h1{
+    text-align:center;
+    font-family: 'Algerian', 'Calibri';
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+ul li, .footer-text{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul li a:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 255);
+}
+.one-image, .footer-text{
+    padding-top:50px;
+    text-align: center;
+}

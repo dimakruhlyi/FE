@@ -1,0 +1,42 @@
+@import url('../font/Roboto-Light.ttf');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    text-align:center;
+    font-family: 'Algerian', 'Calibri';
+    text-transform: uppercase;
+}
+/* -------------------------    Task 2.1 --------------------*/
+table{
+    width:400px;
+}
+table .spanned-col{
+    text-align:center;
+}
+/* -------------------------    Task 2.2 --------------------*/
+ul .list-caption{
+    list-style-type: none;
+    font-weight: bold;
+}
+/* -------------------------    Task 2.3 --------------------*/
+.flex-container{
+    display:flex;
+    flex-direction:row;
+}
+.flex-item{
+    margin-left:80px;
+}
+.caption-bold-list{
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+.decimal-leading-zeros{
+    list-style-type: decimal-leading-zero;
+}
+/* --------------------------------------------------------*/
+.footer-text{
+    text-transform: uppercase;
+    padding-top:50px;
+    text-align: center;
+}

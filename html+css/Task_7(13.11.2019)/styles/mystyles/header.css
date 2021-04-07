@@ -1,0 +1,65 @@
+header{
+    width:100%;
+}
+header nav ul a{
+    font-family: 'Consolas';
+    font-size:20px;
+    text-decoration: none;;
+    color:#fff;
+}
+h1{
+    font-family: 'AR Julian';
+    font-size:80px;
+    text-align:center;
+    text-shadow: 7px 5px 6px rgba(206,206,206,0.88);
+    color:#fff;
+    
+}
+header nav h2{
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+    font-size:30px;
+    color:lightblue;
+    text-shadow: 8px 5px 8px rgba(0,0,0,0.97);
+}
+header nav h2:hover{
+    cursor: pointer;
+}
+nav{
+    font-size:14px;
+    text-shadow:none;
+    top:0;
+    width:100%;
+}
+nav ul{ 
+    display:none;
+    list-style:none;
+    max-height:400px;
+    overflow-y:scroll;
+}
+nav ul li:nth-child(even){
+    background:#273447;
+    
+}
+nav ul li:nth-child(odd){
+    background:#4682B4;
+}
+nav ul li a:first-child{
+    font-family: 'Consolas';
+    font-size:20px;
+    color:lightblue;
+}
+nav ul li a:first-child::after{
+    content: " via ";
+    color:blue;
+    font-family: 'Broadway';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul,section{
+    margin:0 0 20px;
+}
+nav:hover ul{
+    cursor: pointer;
+    display:block;
+}

@@ -1,0 +1,24 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header article"
+    "footer footer";
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    margin: 0;
+    background:url('../../img/body.jpg') center no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    text-align: center;;
+}
+article{
+    grid-area: article;
+}
